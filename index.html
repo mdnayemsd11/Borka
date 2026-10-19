@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>গর্জিয়াস গোলাপ এমব্রয়ডারি বোরকা (ম্যাচিং হিজাবসহ) | Best Dress Collection</title>
+<meta name="description" content="প্রিমিয়াম গোলাপ এমব্রয়ডারি বোরকা, সাথে ম্যাচিং হিজাব। মাত্র ১,১৫০ টাকা। সাইজ ৪৮, ৫০, ৫২, ৫৪, ৫৬। এখনই অর্ডার করুন।">
+<meta name="theme-color" content="#9d3358">
+<meta property="og:title" content="গর্জিয়াস গোলাপ এমব্রয়ডারি বোরকা | Best Dress Collection">
+<meta property="og:description" content="সৌন্দর্য, আভিজাত্য আর পর্দার অপূর্ব সমন্বয়! মাত্র ১,১৫০ টাকা।">
+<meta property="og:type" content="website">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --rose:#e9a8ba;
+    --rose-soft:#fbe9ee;
+    --rose-dark:#9d3358;
+    --rose-darker:#7a2543;
+    --cream:#fff8f3;
+    --cream-2:#fdf1ea;
+    --ink:#3a2a30;
+    --muted:#7c6a70;
+    --line:#ecd9de;
+    --ok:#2e7d4f;
+    --err:#c0392b;
+    --radius:18px;
+    --shadow:0 10px 30px rgba(157,51,88,.12);
+  }
+  *,*::before,*::after{box-sizing:border-box}
+  html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+  body{
+    margin:0;font-family:"Hind Siliguri","Noto Sans Bengali",system-ui,sans-serif;
+    color:var(--ink);background:var(--cream);line-height:1.65;font-size:17px;
+    padding-bottom:84px;
+  }
+  img{max-width:100%;display:block}
+  a{color:inherit}
+  .container{width:min(1120px,100% - 32px);margin-inline:auto}
+  section{padding:56px 0;scroll-margin-top:12px}
+  h1,h2,h3{line-height:1.3;margin:0 0 .5em}
+  h2{font-size:clamp(1.5rem,4.5vw,2.1rem);color:var(--rose-darker);text-align:center}
+  .section-sub{text-align:center;color:var(--muted);margin:-4px auto 28px;max-width:560px}
+
+  /* Buttons */
+  .btn{
+    display:inline-flex;align-items:center;justify-content:center;gap:8px;
+    font:inherit;font-weight:600;font-size:1.05rem;text-decoration:none;cursor:pointer;
+    padding:13px 26px;border-radius:999px;border:2px solid transparent;
+    transition:transform .15s,box-shadow .15s,background .15s;min-height:48px;
+  }
+  .btn:focus-visible{outline:3px solid #f3b4c7;outline-offset:2px}
+  .btn-primary{background:var(--rose-dark);color:#fff;box-shadow:0 8px 20px rgba(157,51,88,.3)}
+  .btn-primary:hover{background:var(--rose-darker);transform:translateY(-1px)}
+  .btn-primary:disabled{background:#c9a6b3;box-shadow:none;cursor:not-allowed;transform:none}
+  .btn-outline{background:#fff;color:var(--rose-dark);border-color:var(--rose-dark)}
+  .btn-outline:hover{background:var(--rose-soft)}
+  .btn-block{width:100%}
+
+  /* Top bar */
+  .topbar{background:#fff;border-bottom:1px solid var(--line)}
+  .topbar .container{display:flex;align-items:center;justify-content:space-between;padding:12px 0}
+  .brand{font-weight:700;font-size:1.2rem;color:var(--rose-darker);letter-spacing:.2px}
+  .brand span{color:var(--rose-dark)}
+  .topbar a.fb{font-size:.95rem;text-decoration:none;color:var(--rose-dark);font-weight:600}
+
+  /* Hero */
+  .hero{background:linear-gradient(160deg,var(--rose-soft),var(--cream) 60%);padding:36px 0 56px}
+  .hero-grid{display:grid;gap:28px;align-items:start}
+  @media(min-width:860px){.hero-grid{grid-template-columns:1.05fr 1fr;gap:48px;align-items:center}}
+
+  .gallery{background:#fff;border-radius:var(--radius);box-shadow:var(--shadow);padding:12px}
+  .main-img{
+    aspect-ratio:3/4;background:var(--cream-2);border-radius:14px;
+    display:flex;align-items:center;justify-content:center;overflow:hidden;
+  }
+  .main-img img{width:100%;height:100%;object-fit:contain}
+  .thumbs{display:flex;gap:10px;margin-top:12px;overflow-x:auto;padding-bottom:4px}
+  .thumb{
+    flex:0 0 72px;height:90px;border-radius:12px;border:2px solid transparent;background:var(--cream-2);
+    padding:0;cursor:pointer;overflow:hidden;
+  }
+  .thumb img{width:100%;height:100%;object-fit:contain}
+  .thumb[aria-current="true"]{border-color:var(--rose-dark)}
+  .thumb:focus-visible{outline:3px solid #f3b4c7;outline-offset:2px}
+
+  .hero-text h1{font-size:clamp(1.7rem,6vw,2.6rem);color:var(--rose-darker)}
+  .hero-text .sub{font-size:1.2rem;font-weight:600;color:var(--rose-dark);margin-bottom:12px}
+  .hero-text p{color:var(--muted);margin:0 0 18px}
+  .price-box{
+    display:inline-flex;align-items:baseline;gap:10px;background:#fff;border:2px dashed var(--rose);
+    border-radius:16px;padding:10px 22px;margin-bottom:22px;
+  }
+  .price-box small{color:var(--muted);font-size:.95rem}
+  .price-box strong{font-size:2rem;color:var(--rose-dark)}
+  .cta-row{display:flex;flex-wrap:wrap;gap:12px}
+  .hero-tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px;padding:0;list-style:none}
+  .hero-tags li{background:#fff;border:1px solid var(--line);border-radius:999px;padding:4px 14px;font-size:.92rem}
+
+  /* Features */
+  .features{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;margin-bottom:36px}
+  .card{background:#fff;border-radius:var(--radius);box-shadow:var(--shadow);padding:22px}
+  .feature{text-align:center;font-weight:600}
+  .feature .ico{font-size:2rem;display:block;margin-bottom:6px}
+  .sizes-card{max-width:640px;margin-inline:auto;text-align:center}
+  .sizes-card h3{color:var(--rose-darker)}
+  .chips{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin:14px 0 6px}
+  .chip{
+    font:inherit;font-weight:600;background:#fff;color:var(--ink);border:2px solid var(--line);border-radius:14px;
+    padding:8px 18px;min-height:46px;cursor:pointer;transition:.15s;
+  }
+  .chip small{display:block;font-weight:400;font-size:.75rem;color:var(--muted);line-height:1.2}
+  .chip:hover{border-color:var(--rose)}
+  .chip[aria-pressed="true"]{background:var(--rose-dark);border-color:var(--rose-dark);color:#fff}
+  .chip[aria-pressed="true"] small{color:#ffe9f0}
+  .chip:focus-visible{outline:3px solid #f3b4c7;outline-offset:2px}
+  .hint{color:var(--muted);font-size:.92rem;margin:6px 0 0}
+
+  /* Order */
+  .order{background:linear-gradient(180deg,var(--cream-2),var(--cream))}
+  .order-grid{display:grid;gap:24px;align-items:start}
+  @media(min-width:900px){.order-grid{grid-template-columns:1.3fr 1fr}.summary{position:sticky;top:16px}}
+  .field{margin-bottom:18px}
+  .field>label,.field>legend,legend.lbl{display:block;font-weight:600;margin-bottom:6px;padding:0}
+  fieldset{border:0;margin:0 0 18px;padding:0;min-width:0}
+  .req{color:var(--err)}
+  input[type=text],input[type=tel],input[type=number],select,textarea{
+    width:100%;font:inherit;color:var(--ink);background:#fff;border:2px solid var(--line);border-radius:12px;
+    padding:12px 14px;min-height:48px;transition:border-color .15s,box-shadow .15s;
+  }
+  textarea{min-height:96px;resize:vertical}
+  input:focus,select:focus,textarea:focus{outline:none;border-color:var(--rose-dark);box-shadow:0 0 0 4px rgba(233,168,186,.35)}
+  .invalid input,.invalid select,.invalid textarea{border-color:var(--err)}
+  .error{color:var(--err);font-size:.9rem;margin-top:4px;min-height:0;display:none}
+  .invalid .error,.invalid.error-host .error{display:block}
+  .qty{display:flex;align-items:center;gap:8px;max-width:190px}
+  .qty button{
+    flex:0 0 48px;height:48px;border-radius:12px;border:2px solid var(--line);background:#fff;font-size:1.4rem;
+    cursor:pointer;color:var(--rose-dark);font-family:inherit;
+  }
+  .qty button:focus-visible{outline:3px solid #f3b4c7;outline-offset:2px}
+  .qty input{text-align:center;padding-inline:4px}
+  .choice-grid{display:grid;gap:10px}
+  @media(min-width:520px){.choice-grid.cols-2{grid-template-columns:1fr 1fr}.choice-grid.cols-3{grid-template-columns:repeat(3,1fr)}}
+  .choice{position:relative}
+  .choice input{position:absolute;opacity:0;inset:0;width:100%;height:100%;margin:0;cursor:pointer}
+  .choice span{
+    display:flex;align-items:center;gap:10px;padding:12px 14px;border:2px solid var(--line);border-radius:12px;background:#fff;
+    font-weight:600;min-height:52px;transition:.15s;
+  }
+  .choice span::before{
+    content:"";flex:0 0 18px;height:18px;border-radius:50%;border:2px solid var(--rose);background:#fff;transition:.15s;
+  }
+  .choice input:checked+span{border-color:var(--rose-dark);background:var(--rose-soft)}
+  .choice input:checked+span::before{background:var(--rose-dark);box-shadow:inset 0 0 0 3px #fff}
+  .choice input:focus-visible+span{outline:3px solid #f3b4c7;outline-offset:2px}
+  .pay-info{
+    background:var(--rose-soft);border:1px solid var(--rose);border-radius:14px;padding:14px 16px;margin:-4px 0 18px;
+  }
+  .pay-info .num{
+    display:inline-block;font-size:1.3rem;font-weight:700;color:var(--rose-darker);letter-spacing:1px;
+    background:#fff;border-radius:10px;padding:2px 12px;margin:4px 0;
+  }
+  .pay-info ol{margin:8px 0 0;padding-left:20px}
+  .pay-info .warn{font-size:.9rem;color:var(--muted);margin:10px 0 0}
+  .hp{position:absolute!important;left:-9999px;width:1px;height:1px;overflow:hidden}
+
+  .summary h3{color:var(--rose-darker);margin-bottom:12px}
+  .sum-row{display:flex;justify-content:space-between;gap:12px;padding:8px 0;border-bottom:1px dashed var(--line)}
+  .sum-row span:first-child{color:var(--muted)}
+  .sum-row span:last-child{font-weight:600;text-align:right}
+  .sum-total{border-bottom:0;font-size:1.25rem;padding-top:14px}
+  .sum-total span:first-child{color:var(--ink);font-weight:700}
+  .sum-total span:last-child{color:var(--rose-dark);font-weight:700}
+  .notice{background:#fff4e5;border:1px solid #f2c98a;color:#7a4a00;border-radius:12px;padding:10px 14px;font-size:.93rem;margin:12px 0}
+  .form-alert{border-radius:12px;padding:12px 16px;margin-bottom:16px;font-weight:500}
+  .form-alert.error-box{background:#fdecea;border:1px solid #f5b7b1;color:#8e2418}
+  .success-card{text-align:center;padding:34px 22px}
+  .success-card .big{font-size:3rem}
+  .success-card h3{color:var(--ok)}
+  .success-card p{margin:.4em 0}
+
+  /* FAQ */
+  .faq{max-width:760px;margin-inline:auto}
+  details{background:#fff;border:1px solid var(--line);border-radius:14px;margin-bottom:10px;padding:0 18px}
+  summary{cursor:pointer;font-weight:600;padding:14px 0;list-style:none;display:flex;justify-content:space-between;gap:12px}
+  summary::-webkit-details-marker{display:none}
+  summary::after{content:"+";color:var(--rose-dark);font-size:1.4rem;line-height:1}
+  details[open] summary::after{content:"−"}
+  details p{margin:0 0 14px;color:var(--muted)}
+  summary:focus-visible{outline:3px solid #f3b4c7;outline-offset:2px;border-radius:8px}
+
+  /* Footer */
+  footer{background:var(--rose-darker);color:#fff;padding:40px 0 28px;text-align:center}
+  footer h2{color:#fff;margin-bottom:4px}
+  footer .tag{color:#ffd9e4;margin:0 0 20px}
+  .foot-actions{display:flex;flex-wrap:wrap;gap:10px;justify-content:center}
+  footer .btn-outline{background:transparent;color:#fff;border-color:#fff}
+  footer .btn-outline:hover{background:rgba(255,255,255,.15)}
+  footer .btn-light{background:#fff;color:var(--rose-darker)}
+  footer small{display:block;margin-top:24px;color:#f1c3d2}
+
+  /* Sticky mobile bar */
+  .sticky-bar{
+    position:fixed;inset:auto 0 0 0;z-index:50;background:#fff;border-top:1px solid var(--line);
+    box-shadow:0 -6px 20px rgba(0,0,0,.08);padding:10px 16px calc(10px + env(safe-area-inset-bottom));
+    display:flex;align-items:center;justify-content:space-between;gap:12px;transition:transform .25s;
+  }
+  .sticky-bar.hide{transform:translateY(110%)}
+  .sticky-bar .p small{display:block;color:var(--muted);font-size:.78rem;line-height:1.1}
+  .sticky-bar .p strong{font-size:1.3rem;color:var(--rose-dark)}
+  .sticky-bar .btn{padding:11px 22px}
+  @media(min-width:768px){.sticky-bar{display:none}body{padding-bottom:0}}
+
+  @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+</style>
+</head>
+<body>
+
+<!-- ============ Top bar ============ -->
+<header class="topbar">
+  <div class="container">
+    <div class="brand">🌸 Best <span>Dress</span> Collection</div>
+    <a class="fb" id="topFb" href="#" target="_blank" rel="noopener noreferrer">ফেসবুক পেজ</a>
+  </div>
+</header>
+
+<main>
+<!-- ============ Hero ============ -->
+<section class="hero" id="top">
+  <div class="container hero-grid">
+    <div class="gallery" aria-label="পণ্যের ছবি">
+      <div class="main-img"><img id="mainImg" src="" alt="গোলাপ এমব্রয়ডারি বোরকা" width="600" height="800" decoding="async" fetchpriority="high"></div>
+      <div class="thumbs" id="thumbs" role="list"></div>
+    </div>
+
+    <div class="hero-text">
+      <h1>🌹 গর্জিয়াস গোলাপ এমব্রয়ডারি বোরকা 🌹</h1>
+      <div class="sub">সৌন্দর্য, আভিজাত্য আর পর্দার অপূর্ব সমন্বয়!</div>
+      <p>প্রিমিয়াম গোলাপ এমব্রয়ডারি ডিজাইনের আকর্ষণীয় বোরকা। সাথে থাকছে ম্যাচিং হিজাব। আপনার পছন্দের সাইজটি বেছে নিয়ে অর্ডার করুন।</p>
+      <div class="price-box"><small>মাত্র</small><strong id="heroPrice">১,১৫০ টাকা</strong></div>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="#order" data-scroll="order">এখনই অর্ডার করুন</a>
+        <a class="btn btn-outline" href="#details" data-scroll="details">পণ্যের বিস্তারিত দেখুন</a>
+      </div>
+      <ul class="hero-tags">
+        <li>🧕 ম্যাচিং হিজাবসহ</li>
+        <li>📏 ৫টি সাইজ</li>
+        <li>💳 bKash / Nagad / COD</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============ Details ============ -->
+<section id="details">
+  <div class="container">
+    <h2>পণ্যের বৈশিষ্ট্য</h2>
+    <p class="section-sub">🌸 সৌন্দর্য, আভিজাত্য আর পর্দার এক অপূর্ব সমন্বয়। যারা মার্জিত ও স্টাইলিশ বোরকা পছন্দ করেন, তাদের জন্য।</p>
+
+    <div class="features">
+      <div class="card feature"><span class="ico">🌹</span>প্রিমিয়াম গোলাপ এমব্রয়ডারি</div>
+      <div class="card feature"><span class="ico">🧕</span>ম্যাচিং হিজাবসহ</div>
+      <div class="card feature"><span class="ico">✨</span>আকর্ষণীয় ও মার্জিত ডিজাইন</div>
+      <div class="card feature"><span class="ico">💖</span>আরামদায়ক ডিজাইন</div>
+      <div class="card feature"><span class="ico">📏</span>একাধিক সাইজের সুবিধা</div>
+    </div>
+
+    <div class="card sizes-card">
+      <h3>📏 আপনার সাইজ বেছে নিন</h3>
+      <div class="chips" id="sizeChips" role="group" aria-label="সাইজ নির্বাচন"></div>
+      <p class="hint">সাইজ নির্বাচন করলে তা অর্ডার ফর্মেও সিলেক্ট হয়ে যাবে।</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ Order ============ -->
+<section class="order" id="order">
+  <div class="container">
+    <h2>অর্ডার করুন</h2>
+    <p class="section-sub">নিচের ফর্মটি পূরণ করে অর্ডার কনফার্ম করুন।</p>
+
+    <div class="order-grid">
+      <div class="card" id="formCard">
+        <div id="formAlert" class="form-alert error-box" role="alert" hidden></div>
+
+        <form id="orderForm" novalidate>
+          <div class="field" data-field="name">
+            <label for="name">কাস্টমারের নাম <span class="req">*</span></label>
+            <input type="text" id="name" name="name" autocomplete="name" maxlength="60" aria-describedby="err-name" placeholder="আপনার পুরো নাম">
+            <div class="error" id="err-name"></div>
+          </div>
+
+          <div class="field" data-field="phone">
+            <label for="phone">মোবাইল নম্বর <span class="req">*</span></label>
+            <input type="tel" id="phone" name="phone" autocomplete="tel" inputmode="tel" maxlength="16" aria-describedby="err-phone" placeholder="01XXXXXXXXX">
+            <div class="error" id="err-phone"></div>
+          </div>
+
+          <div class="field" data-field="address">
+            <label for="address">সম্পূর্ণ ডেলিভারি ঠিকানা <span class="req">*</span></label>
+            <textarea id="address" name="address" autocomplete="street-address" maxlength="300" aria-describedby="err-address" placeholder="বাড়ি/রোড নম্বর, এলাকা, থানা, জেলা"></textarea>
+            <div class="error" id="err-address"></div>
+          </div>
+
+          <div class="field" data-field="size">
+            <label for="size">বোরকার সাইজ <span class="req">*</span></label>
+            <select id="size" name="size" aria-describedby="err-size">
+              <option value="">— সাইজ নির্বাচন করুন —</option>
+              <option value="48">48 (বডি ফ্রি সাইজ)</option>
+              <option value="50">50</option>
+              <option value="52">52</option>
+              <option value="54">54</option>
+              <option value="56">56</option>
+            </select>
+            <div class="error" id="err-size"></div>
+          </div>
+
+          <div class="field" data-field="quantity">
+            <label for="quantity">পরিমাণ <span class="req">*</span></label>
+            <div class="qty">
+              <button type="button" id="qtyMinus" aria-label="পরিমাণ কমান">−</button>
+              <input type="number" id="quantity" name="quantity" min="1" max="10" value="1" inputmode="numeric" aria-describedby="err-quantity">
+              <button type="button" id="qtyPlus" aria-label="পরিমাণ বাড়ান">+</button>
+            </div>
+            <div class="error" id="err-quantity"></div>
+          </div>
+
+          <fieldset data-field="area">
+            <legend class="lbl">ডেলিভারি এলাকা <span class="req">*</span></legend>
+            <div class="choice-grid cols-2">
+              <label class="choice"><input type="radio" name="area" value="inside"><span>ঢাকার ভিতরে</span></label>
+              <label class="choice"><input type="radio" name="area" value="outside"><span>ঢাকার বাইরে</span></label>
+            </div>
+            <div class="error" id="err-area"></div>
+          </fieldset>
+
+          <fieldset data-field="payment">
+            <legend class="lbl">পেমেন্ট মেথড <span class="req">*</span></legend>
+            <div class="choice-grid cols-3">
+              <label class="choice"><input type="radio" name="payment" value="bkash"><span>bKash</span></label>
+              <label class="choice"><input type="radio" name="payment" value="nagad"><span>Nagad</span></label>
+              <label class="choice"><input type="radio" name="payment" value="cod"><span>Cash on Delivery</span></label>
+            </div>
+            <div class="error" id="err-payment"></div>
+          </fieldset>
+
+          <!-- Payment instructions -->
+          <div class="pay-info" id="payInfo" hidden>
+            <div id="payInfoBody"></div>
+          </div>
+
+          <div class="field" id="trxField" data-field="trxId" hidden>
+            <label for="trxId">Transaction ID <span class="req">*</span></label>
+            <input type="text" id="trxId" name="trxId" autocomplete="off" autocapitalize="characters" maxlength="20" aria-describedby="err-trxId" placeholder="যেমন: 8N7A6D5EE7">
+            <div class="error" id="err-trxId"></div>
+          </div>
+
+          <div class="field">
+            <label for="notes">অতিরিক্ত নির্দেশনা <small style="font-weight:400;color:var(--muted)">(ঐচ্ছিক)</small></label>
+            <textarea id="notes" name="notes" maxlength="300" placeholder="কোনো বিশেষ নির্দেশনা থাকলে লিখুন"></textarea>
+          </div>
+
+          <!-- Honeypot (spam protection). Real users never see this field. -->
+          <div class="hp" aria-hidden="true">
+            <label>Website <input type="text" name="website" id="website" tabindex="-1" autocomplete="off"></label>
+          </div>
+
+          <div class="notice" id="chargeNotice" hidden></div>
+
+          <button type="submit" class="btn btn-primary btn-block" id="submitBtn">অর্ডার কনফার্ম করুন</button>
+        </form>
+      </div>
+
+      <aside class="card summary" aria-labelledby="sumTitle">
+        <h3 id="sumTitle">🧾 অর্ডার সামারি</h3>
+        <div aria-live="polite">
+          <div class="sum-row"><span>পণ্য</span><span>গর্জিয়াস গোলাপ এমব্রয়ডারি বোরকা</span></div>
+          <div class="sum-row"><span>সাইজ</span><span id="sSize">—</span></div>
+          <div class="sum-row"><span>পরিমাণ</span><span id="sQty">১</span></div>
+          <div class="sum-row"><span>প্রতি পিস মূল্য</span><span id="sUnit"></span></div>
+          <div class="sum-row"><span>সাবটোটাল</span><span id="sSub"></span></div>
+          <div class="sum-row"><span>ডেলিভারি চার্জ</span><span id="sCharge">—</span></div>
+          <div class="sum-row"><span>পেমেন্ট মেথড</span><span id="sPay">—</span></div>
+          <div class="sum-row sum-total"><span>সর্বমোট</span><span id="sTotal">—</span></div>
+        </div>
+        <p class="hint" style="margin-top:12px">🧕 বোরকার সাথে ম্যাচিং হিজাব থাকছে।</p>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section id="faq">
+  <div class="container">
+    <h2>সচরাচর জিজ্ঞাসা</h2>
+    <p class="section-sub">আপনার সাধারণ প্রশ্নের উত্তর এখানে পাবেন।</p>
+    <div class="faq">
+      <details><summary>বোরকার দাম কত?</summary><p>মাত্র ১,১৫০ টাকা।</p></details>
+      <details><summary>বোরকার সঙ্গে কী থাকছে?</summary><p>বোরকার সঙ্গে একটি ম্যাচিং হিজাব থাকছে।</p></details>
+      <details><summary>কী কী সাইজ পাওয়া যাবে?</summary><p>৪৮ (বডি ফ্রি সাইজ), ৫০, ৫২, ৫৪ ও ৫৬।</p></details>
+      <details><summary>কীভাবে অর্ডার করব?</summary><p>অর্ডার ফর্ম পূরণ করে পছন্দের সাইজ ও পেমেন্ট মেথড নির্বাচন করে অর্ডার সাবমিট করুন।</p></details>
+      <details><summary>কীভাবে পেমেন্ট করব?</summary><p>bKash, Nagad অথবা Cash on Delivery নির্বাচন করতে পারবেন।</p></details>
+      <details><summary>ডেলিভারি চার্জ কত?</summary><p>ডেলিভারি চার্জ আপনার ডেলিভারি এলাকার ওপর নির্ভর করবে। অর্ডার করার আগে চার্জটি দেখে নিন।</p></details>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ============ Footer ============ -->
+<footer>
+  <div class="container">
+    <h2>Best Dress Collection</h2>
+    <p class="tag">"আপনার পছন্দ, আমাদের ভালোবাসা।"</p>
+    <div class="foot-actions">
+      <a class="btn btn-light" id="footFb" href="#" target="_blank" rel="noopener noreferrer">আমাদের ফেসবুক পেজ দেখুন</a>
+      <a class="btn btn-outline" id="footContact" href="#" target="_blank" rel="noopener noreferrer">যোগাযোগ করুন</a>
+      <a class="btn btn-outline" href="#order" data-scroll="order">অর্ডার করুন</a>
+    </div>
+    <small>© <span id="year"></span> Best Dress Collection. সর্বস্বত্ব সংরক্ষিত।</small>
+  </div>
+</footer>
+
+<!-- Sticky mobile order bar -->
+<div class="sticky-bar" id="stickyBar">
+  <div class="p"><small>মাত্র</small><strong id="stickyPrice"></strong></div>
+  <a class="btn btn-primary" href="#order" data-scroll="order">অর্ডার করুন</a>
+</div>
+
+<script>
+/* =====================================================================
+   ⚙️  EDITABLE CONFIGURATION — এখানে প্রয়োজনমতো পরিবর্তন করুন
+   ===================================================================== */
+const CONFIG = {
+  brand: "Best Dress Collection",
+  productName: "গর্জিয়াস গোলাপ এমব্রয়ডারি বোরকা",
+  unitPrice: 1150,                       // প্রতি পিসের মূল্য (৳)
+  maxQuantity: 10,
+
+  // পেমেন্ট নম্বর (bKash ও Nagad এর জন্য একই নম্বর)
+  payment: {
+    bkash: "01852316348",
+    nagad: "01852316348"
+  },
+
+  facebookUrl: "https://www.facebook.com/share/1GicPqC3fb/",
+  // "যোগাযোগ করুন" বাটনের লিংক। চাইলে WhatsApp/ফোন লিংক দিন, যেমন "tel:+8801XXXXXXXXX"
+  contactUrl: "https://www.facebook.com/share/1GicPqC3fb/",
+
+  // ছবি: images ফোল্ডারে এই নামে ছবি রাখুন (বা এখানে নাম বদলান)
+  images: [
+    { src: "images/burqa-1.jpg", alt: "গোলাপ এমব্রয়ডারি বোরকা — ছবি ১" },
+    { src: "images/burqa-2.jpg", alt: "গোলাপ এমব্রয়ডারি বোরকা — ছবি ২" },
+    { src: "images/burqa-3.jpg", alt: "গোলাপ এমব্রয়ডারি বোরকা — ছবি ৩" }
+  ],
+
+  // Netlify Function endpoint (netlify.toml/ফাংশনে সেট করা আছে)
+  apiEndpoint: "/api/place-order"
+
+  // ⚠️ ডেলিভারি চার্জ এখানে নয়। Netlify Environment Variables-এ সেট করুন:
+  //    DELIVERY_CHARGE_INSIDE_DHAKA  এবং  DELIVERY_CHARGE_OUTSIDE_DHAKA
+  //    (এতে সার্ভার ও ফ্রন্টএন্ড একই চার্জ ব্যবহার করে)
+};
+
+/* =====================================================================
+   Helpers
+   ===================================================================== */
+const $  = (s, r = document) => r.querySelector(s);
+const $$ = (s, r = document) => [...r.querySelectorAll(s)];
+const bnNum = new Intl.NumberFormat("bn-BD");
+const taka  = n => "৳ " + bnNum.format(n);
+const toEnDigits = s => String(s).replace(/[০-৯]/g, d => "০১২৩৪৫৬৭৮৯".indexOf(d));
+const AREA_LABEL = { inside: "ঢাকার ভিতরে", outside: "ঢাকার বাইরে" };
+const PAY_LABEL  = { bkash: "bKash", nagad: "Nagad", cod: "Cash on Delivery" };
+const SIZE_LABEL = { "48": "48 (বডি ফ্রি সাইজ)", "50": "50", "52": "52", "54": "54", "56": "56" };
+const SIZES = ["48", "50", "52", "54", "56"];
+
+const PLACEHOLDER = n => "data:image/svg+xml;utf8," + encodeURIComponent(
+  `<svg xmlns="http://www.w3.org/2000/svg" width="600" height="800" viewBox="0 0 600 800">
+     <rect width="600" height="800" fill="#fdf1ea"/>
+     <text x="300" y="380" text-anchor="middle" font-family="sans-serif" font-size="26" fill="#9d3358">Product image ${n}</text>
+     <text x="300" y="420" text-anchor="middle" font-family="sans-serif" font-size="20" fill="#7c6a70">images/burqa-${n}.jpg</text>
+   </svg>`);
+
+/* =====================================================================
+   Static content wiring
+   ===================================================================== */
+$("#year").textContent = new Date().getFullYear();
+$("#heroPrice").textContent = bnNum.format(CONFIG.unitPrice) + " টাকা";
+$("#stickyPrice").textContent = "৳ " + bnNum.format(CONFIG.unitPrice);
+$("#sUnit").textContent = taka(CONFIG.unitPrice);
+["topFb", "footFb"].forEach(id => $("#" + id).href = CONFIG.facebookUrl);
+$("#footContact").href = CONFIG.contactUrl;
+$("#quantity").max = CONFIG.maxQuantity;
+
+/* Smooth scroll buttons */
+$$("[data-scroll]").forEach(a => a.addEventListener("click", e => {
+  e.preventDefault();
+  const t = document.getElementById(a.dataset.scroll);
+  if (t) t.scrollIntoView({ behavior: "smooth", block: "start" });
+}));
+
+/* =====================================================================
+   Gallery
+   ===================================================================== */
+const mainImg = $("#mainImg");
+const thumbs  = $("#thumbs");
+function setMain(i) {
+  const img = CONFIG.images[i];
+  mainImg.onerror = () => { mainImg.onerror = null; mainImg.src = PLACEHOLDER(i + 1); };
+  mainImg.src = img.src;
+  mainImg.alt = img.alt;
+  $$(".thumb", thumbs).forEach((b, j) => b.setAttribute("aria-current", j === i ? "true" : "false"));
+}
+CONFIG.images.forEach((img, i) => {
+  const b = document.createElement("button");
+  b.type = "button"; b.className = "thumb"; b.setAttribute("role", "listitem");
+  b.setAttribute("aria-label", "ছবি " + bnNum.format(i + 1) + " দেখুন");
+  const t = document.createElement("img");
+  t.src = img.src; t.alt = ""; t.loading = "lazy"; t.decoding = "async"; t.width = 72; t.height = 90;
+  t.onerror = () => { t.onerror = null; t.src = PLACEHOLDER(i + 1); };
+  b.appendChild(t);
+  b.addEventListener("click", () => setMain(i));
+  thumbs.appendChild(b);
+});
+if (CONFIG.images.length < 2) thumbs.hidden = true;
+setMain(0);
+
+/* =====================================================================
+   Size chips <-> form select
+   ===================================================================== */
+const sizeSel = $("#size");
+const chipBox = $("#sizeChips");
+SIZES.forEach(s => {
+  const b = document.createElement("button");
+  b.type = "button"; b.className = "chip"; b.dataset.size = s; b.setAttribute("aria-pressed", "false");
+  b.innerHTML = s + (s === "48" ? "<small>বডি ফ্রি সাইজ</small>" : "");
+  b.addEventListener("click", () => { sizeSel.value = s; syncSize(); clearError("size"); updateSummary(); });
+  chipBox.appendChild(b);
+});
+function syncSize() {
+  $$(".chip", chipBox).forEach(c => c.setAttribute("aria-pressed", String(c.dataset.size === sizeSel.value)));
+}
+sizeSel.addEventListener("change", () => { syncSize(); clearError("size"); updateSummary(); });
+
+/* =====================================================================
+   Delivery charges (loaded from the server — single source of truth)
+   ===================================================================== */
+const delivery = { inside: null, outside: null, ready: false };
+
+async function loadDeliveryConfig() {
+  try {
+    const res = await fetch(CONFIG.apiEndpoint, { headers: { Accept: "application/json" }, cache: "no-store" });
+    if (!res.ok) throw new Error("HTTP " + res.status);
+    const d = await res.json();
+    delivery.inside  = Number.isFinite(d.inside)  ? d.inside  : null;
+    delivery.outside = Number.isFinite(d.outside) ? d.outside : null;
+  } catch (err) {
+    console.warn("[Admin] ডেলিভারি চার্জ লোড করা যায়নি:", err.message);
+  }
+  delivery.ready = delivery.inside !== null && delivery.outside !== null;
+  if (!delivery.ready) {
+    console.warn("[Admin] DELIVERY_CHARGE_INSIDE_DHAKA ও DELIVERY_CHARGE_OUTSIDE_DHAKA Netlify Environment Variables-এ সেট করুন।");
+  }
+  updateSummary();
+}
+
+/* =====================================================================
+   Payment UI
+   ===================================================================== */
+function getVal(name) { const el = document.querySelector(`input[name="${name}"]:checked`); return el ? el.value : ""; }
+
+function renderPayment() {
+  const pay = getVal("payment");
+  const info = $("#payInfo"), body = $("#payInfoBody"), trx = $("#trxField");
+  if (!pay) { info.hidden = true; trx.hidden = true; return; }
+  info.hidden = false;
+  if (pay === "cod") {
+    trx.hidden = true; $("#trxId").value = ""; clearError("trxId");
+    body.innerHTML = `<strong>💵 ক্যাশ অন ডেলিভারি</strong>
+      <p style="margin:6px 0 0">পণ্য হাতে পাওয়ার সময় ডেলিভারি ম্যানের কাছে মূল্য পরিশোধ করুন। এখন কোনো পেমেন্ট বা Transaction ID লাগবে না।</p>`;
+    return;
+  }
+  trx.hidden = false;
+  const name = PAY_LABEL[pay];
+  const total = currentTotal();
+  const amountText = total !== null ? `<strong>${taka(total)}</strong>` : "সর্বমোট টাকা";
+  body.innerHTML = `
+    <strong>${name} পেমেন্ট নির্দেশনা</strong><br>
+    <span class="num" id="payNum">${CONFIG.payment[pay]}</span>
+    <ol>
+      <li>আপনার ${name} অ্যাপ/ডায়াল থেকে <strong>Send Money</strong> অপশন নিন।</li>
+      <li>উপরের নম্বরে ${amountText} পাঠান।</li>
+      <li>পেমেন্ট শেষে প্রাপ্ত <strong>Transaction ID</strong> নিচের ঘরে লিখুন।</li>
+    </ol>
+    <p class="warn">ℹ️ আপনার দেওয়া Transaction ID আমরা নিজেরা যাচাই করে অর্ডার নিশ্চিত করব। ফর্ম জমা দেওয়ার অর্থ পেমেন্ট যাচাই হয়ে গেছে — এমন নয়।</p>`;
+}
+$$('input[name="payment"]').forEach(r => r.addEventListener("change", () => { clearError("payment"); renderPayment(); updateSummary(); }));
+
+/* =====================================================================
+   Summary
+   ===================================================================== */
+function qtyValue() {
+  const q = parseInt(toEnDigits($("#quantity").value), 10);
+  return Number.isInteger(q) && q >= 1 && q <= CONFIG.maxQuantity ? q : null;
+}
+function currentCharge() {
+  const a = getVal("area");
+  return a && delivery.ready ? delivery[a] : null;
+}
+function currentTotal() {
+  const q = qtyValue(), c = currentCharge();
+  return q !== null && c !== null ? CONFIG.unitPrice * q + c : null;
+}
+function updateSummary() {
+  const q = qtyValue(), area = getVal("area"), pay = getVal("payment");
+  $("#sSize").textContent = sizeSel.value ? SIZE_LABEL[sizeSel.value] : "—";
+  $("#sQty").textContent = q !== null ? bnNum.format(q) : "—";
+  $("#sSub").textContent = q !== null ? taka(CONFIG.unitPrice * q) : "—";
+  const c = currentCharge();
+  $("#sCharge").textContent = !area ? "এলাকা নির্বাচন করুন" : (c !== null ? taka(c) : "—");
+  $("#sPay").textContent = pay ? PAY_LABEL[pay] : "—";
+  const t = currentTotal();
+  $("#sTotal").textContent = t !== null ? taka(t) : "—";
+
+  const notice = $("#chargeNotice"), btn = $("#submitBtn");
+  if (!delivery.ready) {
+    notice.hidden = false;
+    notice.textContent = "⚠️ ডেলিভারি চার্জ এই মুহূর্তে দেখানো যাচ্ছে না। অনুগ্রহ করে কিছুক্ষণ পরে আবার চেষ্টা করুন অথবা আমাদের ফেসবুক পেজে যোগাযোগ করুন।";
+    btn.disabled = true;
+  } else {
+    notice.hidden = true;
+    if (!submitting) btn.disabled = false;
+  }
+  if (pay === "bkash" || pay === "nagad") renderPayment();
+}
+
+/* Quantity controls */
+$("#qtyMinus").addEventListener("click", () => { const q = qtyValue() || 1; $("#quantity").value = Math.max(1, q - 1); clearError("quantity"); updateSummary(); });
+$("#qtyPlus").addEventListener("click", () => { const q = qtyValue() || 1; $("#quantity").value = Math.min(CONFIG.maxQuantity, q + 1); clearError("quantity"); updateSummary(); });
+$("#quantity").addEventListener("input", () => { clearError("quantity"); updateSummary(); });
+$$('input[name="area"]').forEach(r => r.addEventListener("change", () => { clearError("area"); updateSummary(); }));
+
+/* =====================================================================
+   Validation
+   ===================================================================== */
+function setError(field, msg) {
+  const host = document.querySelector(`[data-field="${field}"]`);
+  const box  = document.getElementById("err-" + field);
+  if (!host || !box) return;
+  host.classList.add("invalid", "error-host");
+  box.textContent = msg;
+  const input = host.querySelector("input,select,textarea");
+  if (input) input.setAttribute("aria-invalid", "true");
+}
+function clearError(field) {
+  const host = document.querySelector(`[data-field="${field}"]`);
+  const box  = document.getElementById("err-" + field);
+  if (!host || !box) return;
+  host.classList.remove("invalid", "error-host");
+  box.textContent = "";
+  const input = host.querySelector("input,select,textarea");
+  if (input) input.removeAttribute("aria-invalid");
+}
+["name", "phone", "address", "trxId"].forEach(f => $("#" + f).addEventListener("input", () => clearError(f)));
+
+function normalizePhone(raw) {
+  let p = toEnDigits(raw).replace(/[\s\-().]/g, "");
+  if (p.startsWith("+88")) p = p.slice(3);
+  else if (p.startsWith("88") && p.length === 13) p = p.slice(2);
+  return p;
+}
+const PHONE_RE = /^01[3-9]\d{8}$/;
+const TRX_RE   = /^[A-Za-z0-9]{6,20}$/;
+
+function validate() {
+  const errors = [];
+  const add = (f, m) => { errors.push(f); setError(f, m); };
+  ["name","phone","address","size","quantity","area","payment","trxId"].forEach(clearError);
+
+  const name = $("#name").value.trim();
+  if (!name) add("name", "অনুগ্রহ করে আপনার নাম লিখুন।");
+  else if (name.length < 2) add("name", "নাম কমপক্ষে ২ অক্ষরের হতে হবে।");
+
+  const phone = normalizePhone($("#phone").value);
+  if (!phone) add("phone", "অনুগ্রহ করে মোবাইল নম্বর লিখুন।");
+  else if (!PHONE_RE.test(phone)) add("phone", "সঠিক বাংলাদেশি মোবাইল নম্বর দিন (যেমন: 01712345678)।");
+
+  const addr = $("#address").value.trim();
+  if (!addr) add("address", "অনুগ্রহ করে সম্পূর্ণ ডেলিভারি ঠিকানা লিখুন।");
+  else if (addr.length < 10) add("address", "ঠিকানা আরও বিস্তারিত লিখুন (বাড়ি/রোড, এলাকা, থানা, জেলা)।");
+
+  if (!SIZES.includes(sizeSel.value)) add("size", "অনুগ্রহ করে বোরকার সাইজ নির্বাচন করুন।");
+  if (qtyValue() === null) add("quantity", `পরিমাণ ১ থেকে ${bnNum.format(CONFIG.maxQuantity)} এর মধ্যে হতে হবে।`);
+  if (!getVal("area")) add("area", "অনুগ্রহ করে ডেলিভারি এলাকা নির্বাচন করুন।");
+
+  const pay = getVal("payment");
+  if (!pay) add("payment", "অনুগ্রহ করে পেমেন্ট মেথড নির্বাচন করুন।");
+  else if (pay !== "cod") {
+    const trx = $("#trxId").value.trim();
+    if (!trx) add("trxId", `${PAY_LABEL[pay]} পেমেন্টের Transaction ID দেওয়া আবশ্যক।`);
+    else if (!TRX_RE.test(trx)) add("trxId", "Transaction ID সঠিক নয়। শুধু ইংরেজি অক্ষর ও সংখ্যা (৬–২০ অক্ষর) দিন।");
+  }
+  if (!errors.length && !delivery.ready) { return { ok: false, errors: ["charge"] }; }
+  return { ok: errors.length === 0, errors };
+}
+
+/* =====================================================================
+   Submit
+   ===================================================================== */
+let submitting = false;
+const formStartedAt = Date.now();
+const form = $("#orderForm");
+const alertBox = $("#formAlert");
+
+function newOrderId() {
+  const rnd = (crypto.randomUUID ? crypto.randomUUID() : Date.now().toString(36) + Math.random().toString(36).slice(2));
+  return rnd.replace(/[^A-Za-z0-9-]/g, "").slice(0, 40);
+}
+let pendingOrderId = newOrderId();   // একই অর্ডার পুনরায় পাঠালে সার্ভার ডুপ্লিকেট ধরতে পারবে
+
+function showAlert(msg) { alertBox.textContent = msg; alertBox.hidden = false; alertBox.scrollIntoView({ behavior: "smooth", block: "center" }); }
+function hideAlert() { alertBox.hidden = true; alertBox.textContent = ""; }
+
+form.addEventListener("submit", async e => {
+  e.preventDefault();
+  if (submitting) return;
+  hideAlert();
+
+  const v = validate();
+  if (!v.ok) {
+    if (v.errors[0] === "charge") { showAlert("ডেলিভারি চার্জ লোড হয়নি। অনুগ্রহ করে পেজটি রিফ্রেশ করে আবার চেষ্টা করুন।"); return; }
+    const first = document.querySelector(`[data-field="${v.errors[0]}"]`);
+    if (first) {
+      first.scrollIntoView({ behavior: "smooth", block: "center" });
+      const inp = first.querySelector("input,select,textarea"); if (inp) setTimeout(() => inp.focus({ preventScroll: true }), 350);
+    }
+    return;
+  }
+
+  const pay = getVal("payment");
+  const payload = {
+    orderId: pendingOrderId,
+    name: $("#name").value.trim(),
+    phone: normalizePhone($("#phone").value),
+    address: $("#address").value.trim(),
+    size: sizeSel.value,
+    quantity: qtyValue(),
+    area: getVal("area"),
+    payment: pay,
+    trxId: pay === "cod" ? "" : $("#trxId").value.trim().toUpperCase(),
+    notes: $("#notes").value.trim(),
+    website: $("#website").value,                 // honeypot
+    elapsedMs: Date.now() - formStartedAt
+  };
+
+  submitting = true;
+  const btn = $("#submitBtn");
+  const label = btn.textContent;
+  btn.disabled = true; btn.textContent = "অর্ডার জমা হচ্ছে…";
+
+  try {
+    const ctrl = new AbortController();
+    const timer = setTimeout(() => ctrl.abort(), 20000);
+    const res = await fetch(CONFIG.apiEndpoint, {
+      method: "POST",
+      headers: { "Content-Type": "application/json", Accept: "application/json" },
+      body: JSON.stringify(payload),
+      signal: ctrl.signal
+    });
+    clearTimeout(timer);
+    let data = {};
+    try { data = await res.json(); } catch (_) {}
+
+    if (res.ok && data.ok) {
+      showSuccess(data);
+    } else {
+      const extra = data && data.message ? "\n" + data.message : "";
+      showAlert("দুঃখিত! আপনার অর্ডারটি জমা দেওয়া যায়নি। অনুগ্রহ করে আবার চেষ্টা করুন।" + extra);
+    }
+  } catch (err) {
+    showAlert("দুঃখিত! আপনার অর্ডারটি জমা দেওয়া যায়নি। অনুগ্রহ করে আবার চেষ্টা করুন।");
+  } finally {
+    submitting = false;
+    btn.textContent = label;
+    btn.disabled = !delivery.ready;
+  }
+});
+
+function showSuccess(data) {
+  const card = $("#formCard");
+  const totalLine = data && Number.isFinite(data.total)
+    ? `<p><strong>সর্বমোট: ${taka(data.total)}</strong></p>` : "";
+  card.innerHTML = `
+    <div class="success-card" role="status">
+      <div class="big">✅</div>
+      <h3>আপনার অর্ডারটি সফলভাবে জমা হয়েছে! ❤️</h3>
+      <p>Best Dress Collection থেকে কেনাকাটা করার জন্য ধন্যবাদ।</p>
+      <p>আমাদের প্রতিনিধি প্রয়োজনে আপনার সঙ্গে যোগাযোগ করবেন।</p>
+      ${totalLine}
+      <p style="margin-top:20px"><a class="btn btn-outline" href="">আরেকটি অর্ডার করুন</a></p>
+    </div>`;
+  card.scrollIntoView({ behavior: "smooth", block: "center" });
+  pendingOrderId = newOrderId();
+}
+
+/* =====================================================================
+   Sticky bar: hide while the order section is visible
+   ===================================================================== */
+if ("IntersectionObserver" in window) {
+  const bar = $("#stickyBar");
+  new IntersectionObserver(entries => {
+    bar.classList.toggle("hide", entries[0].isIntersecting);
+  }, { threshold: 0.12 }).observe($("#order"));
+}
+
+/* Init */
+updateSummary();
+loadDeliveryConfig();
+</script>
+</body>
+</html>
